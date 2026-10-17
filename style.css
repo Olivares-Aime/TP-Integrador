@@ -5,3 +5,17 @@ html {
     width: 75px;
     height: 75px;
 }
+img{
+    max-width: 50%;
+    height: auto;
+}
+.encabezado-menu {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.catalogo {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
