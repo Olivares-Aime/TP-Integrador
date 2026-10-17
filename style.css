@@ -4,8 +4,9 @@
     height: 75px;
 }
 img{
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
+    width: 500px;
 }
 .encabezado-menu {
     background-color: #f6f3f3;
@@ -27,4 +28,42 @@ img{
     text-align: center;
     margin-top: 20px;
     font-family: lato, sans-serif;
+}
+.plato {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(115, 13, 13, 0.1);
+}
+.navegacion {
+    background-color: #722626;
+    padding: 10px;
+    text-align: center; 
+}
+.menu-navegacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold; 
+    color: #f1efef;
+    text-decoration: none; 
+    
+}
+.logo {
+    color:rgb(237, 242, 245)
+    font-size 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-color: #f6eaea;
 }
