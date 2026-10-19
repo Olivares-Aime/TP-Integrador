@@ -62,9 +62,11 @@ img{
     box-shadow: 0 2px 5px rgba(115, 13, 13, 0.1);
 }
 .navegacion {
+    display: flex;
+    justify-content: between;
+    align-items: center;
     background-color: #722626;
-    padding: 10px;
-    text-align: center; 
+    padding: 20px;
 }
 .menu-navegacion {
     display: flex;
@@ -73,12 +75,13 @@ img{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-bottom: 2px solid #f1e6e6;
     font-family: Arial, sans-serif;
     font-size: 26px;
     font-weight: bold; 
-    color: #f1efef;
+    color: #ebdada;
     text-decoration: none; 
-    
+
 }
 .logo {
     color:rgb(237, 242, 245)
