@@ -1,13 +1,30 @@
+body{
+    background-image: url(imagenes/Tejidos\ 2\ Modificado.png);
+}
 .container{
+    background-image: url("imagenes/fondo.png");
+    background-size: 100% 100%;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 150px;
     justify-content: center;
-    text-align: center;
-    gap: 50px;
+    align-items: center;
+    position: static;
+}
+.item{
+    background-image: url(imagenes/fondo\ simple.png);
+    background-size: 100% 50%;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 .logo img{
-    width: 150px;
+    width: 75px;
     height: 75px;
 }
 img{
