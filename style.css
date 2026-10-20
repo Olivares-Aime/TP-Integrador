@@ -1,13 +1,31 @@
+body{
+    background-image: url(imagenes/Tejidos\ 2\ Modificado.png);
+}
 .container{
     display: flex;
+    background-image: url("imagenes/fondo.png");
+    background-size: 100% 100%;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 150px;
     justify-content: center;
-    text-align: center;
-    gap: 50px;
+    align-items: center;
+    position: static;
+}
+.item{
+    background-image: url(imagenes/fondo\ simple.png);
+    background-size: 100% 50%;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 .logo img{
-    width: 150px;
+    width: 75px;
     height: 75px;
 }
 img{
@@ -40,17 +58,19 @@ img{
     width: 300px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #e3dddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(115, 13, 13, 0.1);
+    background-color: #c57f7f;
 }
+/*
 .navegacion {
     display: flex;
     justify-content: between;
     align-items: center;
     background-color: #722626;
     padding: 20px;
-}
+} */
 .menu-navegacion {
     display: flex;
     align-items: center;
