@@ -1,6 +1,7 @@
 body{
     background-image: url(imagenes/Tejidos\ 2\ Modificado.png);
 }
+
 .container{
     background-image: url("imagenes/fondo.png");
     background-size: 100% 100%;
@@ -14,6 +15,7 @@ body{
     align-items: center;
     position: static;
 }
+
 .item{
     background-image: url(imagenes/fondo\ simple.png);
     background-size: 100% 50%;
@@ -23,13 +25,14 @@ body{
     display: flex;
     align-items: center;
 }
+
 .logo img{
     width: 75px;
     height: 75px;
 }
+
 .carrusel {
     position: relative;
-    width: 100%;
     max-width: 800px;
     height: 400px;
     margin: 30px auto;
@@ -38,9 +41,10 @@ body{
 
 .imagen {
     display: none;
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .imagen.activa {
@@ -57,11 +61,13 @@ body{
     padding: 10px 20px;
     cursor: pointer;
 }
+
 img{
     max-width: 100%;
     height: auto;
     width: 500px;
 }
+
 .encabezado-menu {
     background-color: #f6f3f3;
     padding: 20px;
@@ -69,11 +75,13 @@ img{
     font-family: Arial, sans-serif;
     
 }
+
 .catalogo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .info-plato {
     display: flex;
     flex-direction: column;
@@ -83,6 +91,7 @@ img{
     margin-top: 20px;
     font-family: lato, sans-serif;
 }
+
 .plato {
     width: 300px;
     margin: 20px;
@@ -91,6 +100,7 @@ img{
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(115, 13, 13, 0.1);
 }
+
 .navegacion {
     display: flex;
     justify-content: between;
@@ -98,6 +108,7 @@ img{
     background-color: #722626;
     padding: 20px;
 }
+
 .menu-navegacion {
     display: flex;
     align-items: center;
@@ -111,8 +122,8 @@ img{
     font-weight: bold; 
     color: #ebdada;
     text-decoration: none; 
-
 }
+
 .logo {
     color:rgb(237, 242, 245)
     font-size 24px;
