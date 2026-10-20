@@ -27,6 +27,36 @@ body{
     width: 75px;
     height: 75px;
 }
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.imagen {
+    display: none;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.imagen.activa {
+    display: block;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.anterior, .siguiente {
+    padding: 10px 20px;
+    cursor: pointer;
+}
 img{
     max-width: 100%;
     height: auto;
