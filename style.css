@@ -58,12 +58,11 @@ img{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border-bottom: 2px solid #f1e6e6;
     font-family: Arial, sans-serif;
     font-size: 26px;
     font-weight: bold; 
-    color: #ebdada;
-    text-decoration: none; 
+    
+     
 
 }
 .logo {
@@ -75,5 +74,5 @@ img{
     align-items: baseline;
     justify-content: center;
     margin-bottom: 10px;
-    font-color: #f6eaea;
+    
 }
