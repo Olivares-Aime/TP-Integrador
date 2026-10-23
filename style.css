@@ -134,11 +134,11 @@ img {
 }
 
 .encabezado-menu {
-    background-color: #080808;
+    background-color: rgba(0, 0, 0, 0.75); 
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
-
+    border-radius: 10px;
 }
 
 .catalogo {
