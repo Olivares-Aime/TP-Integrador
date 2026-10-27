@@ -3,35 +3,8 @@ body {
 }
 
 @font-face {
-    font-family: Smile Moon;
-    ;
-    src: url("fuentes/Smile-Moon.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-@font-face {
-    font-family: Dancing Script;
-    src: url("fuentes/DancingScript-VariableFont_wght.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-@font-face {
     font-family: Childer;
     src: url("fuentes/Childer.otf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-@font-face {
-    font-family: Cinzel-Decorative;
-    src: url("fuentes/Cinzel-Decorative-Regular.ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -56,10 +29,9 @@ body {
 }
 
 .texto {
-    font-family: , sans-serif;
+    font-family: Birds of Paradise, sans-serif;
     color: gold;
     text-align: center;
-
 }
 
 .container {
@@ -237,3 +209,57 @@ img {
     border-radius: 10px;
     padding: 10px;
 }
+.nosotros {
+    text-align: center;
+    position: relative;
+    max-width: 100vmax ;
+    margin: 20px auto;
+    border: solid rgb(61, 15, 15);
+    border-radius: 15px;
+    background-color: #e7c3c3;
+    box-shadow: 0 8px 16px rgb(4, 3, 3);
+    opacity: 0.75;
+}
+.bloques {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: KGPPerfect, sans-serif;
+    font: size 20px;px ;
+    font-weight: 100;
+    color: #040404;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+.subtitulo {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+   
+}
+.titulo-bloque {
+    font-family: Birds of Paradise, sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: lighter;
+   
+}
+.frase-final {
+    font-family: Birds of Paradise, sans-serif;
+    font-size: 20px;
+    color: #050505;
+    margin-bottom: 50 px;
+    font-weight: lighter;
+    
+}
+
+
+
+
+
+
