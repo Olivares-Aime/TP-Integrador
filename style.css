@@ -1,71 +1,73 @@
 body {
-    background-image: url(imagenes/Tejidos\ 2\ Modificado.png);
+    background-image: url("imagenes/Tejidos 2 Modificado.png");
 }
 
-@font-face {
-    font-family: Childer;
-    src: url("fuentes/Childer.otf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
+/* TIPOGRAFÍAS USADAS  */
 
 @font-face {
-    font-family: KGPPerfect;
-    src: url("fuentes/KGPerfectPenmanship.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-@font-face {
-    font-family: Birds of Paradise;
-    src: url("fuentes/Birds of Paradise.ttf");
+    font-family: "Childer";
+    src: url("fuentes/Childer.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "KGPPerfect";
+    src: url("fuentes/KGPerfectPenmanship.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Birds of Paradise";
+    src: url("fuentes/Birds of Paradise.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* TEXTO DORADO DE LAS PÁGINAS */
 
 .texto {
-    font-family: Birds of Paradise, sans-serif;
+    font-family: "KGPPerfect", sans-serif;
     color: gold;
     text-align: center;
 }
 
+
+/* BARRA DE NAVEGACIÓN  */
+
 .container {
-    display: flex;
-    background-image: url("imagenes/fondo.png");
-    background-size: 100% 100%;
-    padding: 15px;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     gap: 150px;
     justify-content: center;
     align-items: center;
-    position: static;
-}
-.condimento img{
-    height: 165px;
-    width: 165px;
-    border: 4px solid goldenrod;
-    border-radius: 15px;
+
+    background-image: url("imagenes/fondo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 15px;
 }
 
 .item {
-    font-family: Birds of Paradise, sans-serif;
+    font-family: "Birds of Paradise", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: rgb(3, 3, 3);
-    background-image: url(imagenes/fondo\ simple.png);
+
+    background-image: url("imagenes/fondo simple.png");
     background-size: 100% 50%;
-    padding: 15px;
     background-position: center;
     background-repeat: no-repeat;
+
+    padding: 15px;
     display: flex;
     align-items: center;
 }
@@ -73,8 +75,30 @@ body {
 .logo img {
     width: 150px;
     height: 150px;
-
+    object-fit: contain;
 }
+
+.contacto {
+    color: #ebdada;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* IMÁGENES DECORATIVAS  */
+
+.condimento img {
+    height: 165px;
+    width: 165px;
+    border: 4px solid goldenrod;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+/* CARRUSEL DE PLATOS  */
 
 .carrusel {
     text-align: center;
@@ -83,13 +107,25 @@ body {
     height: 500px;
     margin: 10px auto;
     overflow: hidden;
+
     border: 4px solid goldenrod;
     border-radius: 15px;
     background-color: #e8a1a1;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
 
-.imagen {
+/* Contenedor de la fotografía y su nombre */
+
+.contenedor-imagen {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Imágenes ocultas por defecto */
+
+.contenedor-imagen .imagen {
     display: none;
     width: 100%;
     height: 100%;
@@ -97,9 +133,46 @@ body {
     object-position: center;
 }
 
-.imagen.activa {
+/* Mostrar solamente la imagen activa */
+
+.contenedor-imagen .imagen.activa {
     display: block;
 }
+
+/* Nombre del plato sobre la fotografía */
+
+.etiqueta-plato {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+    background: rgba(25, 15, 15, 0.78);
+    color: white;
+
+    text-align: center;
+    font-family: "KGPPerfect", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+/*  TÍTULO DEL CARRUSEL */
+
+.nombre-plato {
+    font-family: "KGPPerfect", sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* BOTONES DEL CARRUSEL */
 
 .controles {
     display: flex;
@@ -113,25 +186,42 @@ body {
     cursor: pointer;
 }
 
+
+/* IMÁGENES DEL MENÚ */
+
 img {
     max-width: 100%;
-    height: auto;
-    width: 500px;
 }
 
+
+/* PRESENTACIÓN DE BIENVENIDA */
+
 .encabezado-menu {
-    background-color: rgba(0, 0, 0, 0.75); 
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
     border-radius: 10px;
 }
 
+
+/* CATÁLOGO DE PLATOS  */
+
 .catalogo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
 
+.plato {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+    border: 4px solid goldenrod;
+    border-radius: 15px;
+    background-color: #e8a1a1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
 
 .info-plato {
@@ -139,55 +229,22 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     text-align: center;
     margin-top: 20px;
-    font-family: KGPPerfect, sans-serif;
+    font-family: "KGPPerfect", sans-serif;
     font-size: 18px;
 }
 
-.plato {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 4px solid goldenrod;
-    border-radius: 15px;
-    background-color: #e8a1a1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
-}
 
-.logo {
-    color: rgb(225, 240, 177) font-size 24px;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    margin-bottom: 10px;
-
-}
-
-.contacto {
-    color: #ebdada;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.nombre-plato {
-    font-family: KGPPerfect, sans-serif;
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-decoration: underline;
-}
+/* FORMULARIO DE CONTACTO  */
 
 .forma {
     text-align: center;
     position: relative;
     max-width: 400px;
     margin: 10px auto;
+
     border: 4px solid goldenrod;
     border-radius: 15px;
     background-color: #e8a1a1;
@@ -198,9 +255,11 @@ img {
     padding: 15px;
     align-items: center;
     justify-content: center;
+
     display: flex;
     flex-direction: row;
-    font-family: KGPPerfect, sans-serif;
+
+    font-family: "KGPPerfect", sans-serif;
     color: #000000;
     margin-bottom: 10px;
     font-weight: bold;
@@ -212,57 +271,49 @@ img {
     border-radius: 10px;
     padding: 10px;
 }
+
+
+/* PRESENTACIÓN DEL EMPRENDIEMINTO */
+
 .nosotros {
     text-align: center;
     position: relative;
-    max-width: 100vmax ;
+    max-width: 100%;
     margin: 20px auto;
-    border: solid rgb(61, 15, 15);
+
+    border: 1px solid rgb(61, 15, 15);
     border-radius: 15px;
-    background-color: #e7c3c3;
+    background-color: rgba(231, 195, 195, 0.75);
     box-shadow: 0 8px 16px rgb(4, 3, 3);
-    opacity: 0.75;
 }
+
 .bloques {
     padding: 10px;
     align-items: center;
     justify-content: center;
+
     display: flex;
     flex-direction: column;
-    font-family: KGPPerfect, sans-serif;
-    font: size 20px;px ;
-    font-weight: 100;
+
+    font-family: "KGPPerfect", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
     color: #040404;
     margin-bottom: 15px;
-    font-weight: lighter;
 }
+
 .subtitulo {
     font-family: sans-serif;
     font-size: 20px;
     color: #000000;
     margin-bottom: 10px;
     font-weight: bold;
-   
 }
+
 .titulo-bloque {
-    font-family: Birds of Paradise, sans-serif;
+    font-family: "Birds of Paradise", sans-serif;
     font-size: 40px;
     color: #000000;
     margin-bottom: 10px;
-    font-weight:bold;
-   
+    font-weight: bold;
 }
-.frase-final {
-    font-family: Birds of Paradise, sans-serif;
-    font-size: 20px;
-    color: #050505;
-    margin-bottom: 50 px;
-    font-weight: lighter;
-    
-}
-
-
-
-
-
-

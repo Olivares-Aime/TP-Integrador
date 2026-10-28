@@ -1,25 +1,38 @@
 let indice = 0;
 
-const imagenes = document.querySelectorAll(".imagen");
+const imagenes = document.querySelectorAll(".contenedor-imagen .imagen");
+
+const nombresPlatos = [
+    "Lomo Saltado",
+    "Arroz Chaufa",
+    "Ají de gallina",
+    " Ceviche",
+    "Jalea mixta",
+    "Pollo Broster",
+
+
+];
 
 function cambiarImagen(direccion) {
+
+
+    // comprobamos que existan imagenes 
+    if (imagenes.length=== 0) {
+        console.error ("no se encontraron imagenes");
+        return
+    }
 
     // Ocultar la imagen actual
     imagenes[indice].classList.remove("activa");
 
     // Cambiar el índice
-    indice = indice + direccion;
-
-    // Si llegamos al final, volver a la primera
-    if (indice >= imagenes.length) {
-        indice = 0;
-    }
-
-    // Si retrocedemos desde la primera, ir a la última
-    if (indice < 0) {
-        indice = imagenes.length - 1;
-    }
+    indice = (indice + direccion +imagenes.length)
+    % imagenes.length;
 
     // Mostrar la nueva imagen
     imagenes[indice].classList.add("activa");
+
+    // actualizar el nombre del plato 
+    document.getElementById("nombrePlato").textContent= nombresPlatos[indice];
+
 }
