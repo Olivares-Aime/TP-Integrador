@@ -1,3 +1,5 @@
+
+
 let indice = 0;
 
 const imagenes = document.querySelectorAll(".contenedor-imagen .imagen");
@@ -19,14 +21,14 @@ function cambiarImagen(direccion) {
     // comprobamos que existan imagenes 
     if (imagenes.length=== 0) {
         console.error ("no se encontraron imagenes");
-        return
+        return;
     }
 
     // Ocultar la imagen actual
     imagenes[indice].classList.remove("activa");
 
     // Cambiar el índice
-    indice = (indice + direccion +imagenes.length)
+    indice = (indice + direccion + imagenes.length)
     % imagenes.length;
 
     // Mostrar la nueva imagen
