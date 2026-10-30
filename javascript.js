@@ -11,6 +11,7 @@ const nombresPlatos = [
     " Ceviche",
     "Jalea mixta",
     "Pollo Broster",
+    "Empanadas Peruanas",
 ];
 
 function cambiarImagen(direccion) {
