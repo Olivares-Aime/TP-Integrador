@@ -180,8 +180,7 @@ body {
     gap: 150px;
 }
 
-.anterior,
-.siguiente {
+.boton {
     padding: 15px 25px;
     cursor: pointer;
     font-family: "Birds of Paradise";
@@ -270,12 +269,6 @@ img {
     text-decoration: underline;
 }
 
-.button {
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-}
-
 
 /* PRESENTACIÓN DEL EMPRENDIEMINTO */
 
@@ -287,7 +280,7 @@ img {
 
     border: 1px solid rgb(61, 15, 15);
     border-radius: 15px;
-    background-color: rgba(231, 195, 195, 0.75);
+    background-color: rgba(231, 195, 195, 0.60);
     box-shadow: 0 8px 16px rgb(4, 3, 3);
 }
 
