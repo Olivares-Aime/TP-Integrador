@@ -180,8 +180,7 @@ body {
     gap: 150px;
 }
 
-.anterior,
-.siguiente {
+.boton {
     padding: 15px 25px;
     cursor: pointer;
     font-family: "Birds of Paradise";
