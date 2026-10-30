@@ -364,3 +364,25 @@ img {
 .enlace-social:hover {
     filter: brightness(0.9);
 }
+/* Botón volver arriba */
+.volver-arriba {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 20px;
+
+    background-color: #333;
+    color: white;
+
+    text-decoration: none;
+    font-family: "KGPPerfect";
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.volver-arriba:hover {
+    background-color: #291ce1;
+}
