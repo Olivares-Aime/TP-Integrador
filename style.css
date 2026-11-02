@@ -55,6 +55,23 @@ body {
     padding: 15px;
 }
 
+.ahora{
+    font-family: "Birds of Paradise", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+    background-image: url("imagenes/fondo\ rojo\ simple.png");
+    background-size: 100% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
 .item {
     font-family: "Birds of Paradise", sans-serif;
     font-size: 20px;
