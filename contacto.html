@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Peru Wok</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
 
     <script src="javascript.js" defer></script>
+    <script src="validacion.js" defer></script>
 
 </head>
 
@@ -38,59 +40,72 @@
                     aquí para ayudarte y brindarte la mejor experiencia posible.</p>
             </div>
 
-            <form action="#" method="post" class="forma">
+            <form id="formularioContacto" class="forma" novalidate>
+
+
                 <div class="grupo">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="50" required
+                        autocomplete="name" aria-describedby="errorNombre">
+
+                    <span class="error" id="errorNombre" aria-live="polite"></span>
                 </div>
+
 
                 <div class="grupo">
                     <label for="telefono">Teléfono:</label>
-                    <input type="text" id="telefono" name="telefono" required>
+                    <input type="tel" id="telefono" name="telefono" minlength="8" maxlength="20" required
+                        autocomplete="tel" aria-describedby="errorTelefono">
+
+                    <span class="error" id="errorTelefono" aria-live="polite"></span>
                 </div>
+
 
                 <div class="grupo">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" maxlength="100" required autocomplete="email"
+                        aria-describedby="errorEmail">
+
+                    <span class="error" id="errorEmail" aria-live="polite"></span>
                 </div>
+
 
                 <div class="grupo">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" minlength="10" maxlength="500" required
+                        aria-describedby="errorMensaje"></textarea>
+
+                    <span class="error" id="errorMensaje" aria-live="polite"></span>
                 </div>
 
 
                 <button type="submit" class="boton">Enviar</button>
             </form>
+
+            <!-- Aquí se mostrará el resumen del envío -->
+            <div id="resumenEnvio" aria-live="polite"></div>
         </section>
-        
+
     </main>
 
     <footer>
         <p class="texto">&copy;Peru Wok 2026 - Todos los derechos reservados</p>
     </footer>
-    
-<aside class="barra-social" aria-label="Nuestras redes sociales">
 
-    <a
-        class="enlace-social instagram"
-        href="https://www.instagram.com/peru_wok__?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw=="
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visitar nuestro Instagram">
-        Instagram
-    </a>
+    <aside class="barra-social" aria-label="Nuestras redes sociales">
 
-    <a
-        class="enlace-social whatsapp"
-        href="https://wa.me/5492664035878"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contactar a Perú Wok por WhatsApp">
-        WhatsApp
-    </a>
+        <a class="enlace-social instagram"
+            href="https://www.instagram.com/peru_wok__?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro Instagram">
+            Instagram
+        </a>
 
-</aside>
+        <a class="enlace-social whatsapp" href="https://wa.me/5492664035878" target="_blank" rel="noopener noreferrer"
+            aria-label="Contactar a Perú Wok por WhatsApp">
+            WhatsApp
+        </a>
+
+    </aside>
 </body>
 
 </html>

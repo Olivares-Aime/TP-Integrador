@@ -1,0 +1,131 @@
+/* CONTENEDOR DEL FORMULARIO */
+.forma {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: #f5eee5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* GRUPOS DE CAMPOS */
+.forma .grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ETIQUETAS */
+.forma label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* CAMPOS DE TEXTO */
+.forma input,
+.forma textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+.forma input:focus,
+.forma textarea:focus {
+    outline: none;
+    border-color: #C13584;
+    box-shadow: 0 0 4px rgba(193, 53, 132, 0.4);
+}
+
+/* MENSAJES DE ERROR */
+.forma .error {
+    color: #c62828;
+    font-size: 13px;
+}
+
+/* BOTÓN ENVIAR */
+.forma .boton {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+
+    background-color: #C13584;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* EFECTO DEL BOTÓN */
+.forma .boton:hover {
+    background-color: #96265f;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+
+    .forma {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+}
+/* TARJETA DEL RESUMEN DEL FORMULARIO */
+
+#resumenEnvio {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: #f5eee5;
+    color: #333;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+/* TÍTULO DEL RESUMEN */
+
+#resumenEnvio h2 {
+    color: #8b2635;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* DATOS DEL RESUMEN */
+
+#resumenEnvio p {
+    padding: 10px;
+    margin: 40px auto 30px;
+
+    background-color: #ffffff;
+    border-radius: 6px;
+
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+
+    #resumenEnvio {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+}
