@@ -110,6 +110,9 @@ if (formulario) {
             // Buscamos el espacio destinado al resumen
             const resumen = document.getElementById("resumenEnvio");
 
+            // Mostramos el cuadrado
+            resumen.style.display = "block";
+
             // Limpiamos cualquier resumen anterior
             resumen.textContent = "";
 
