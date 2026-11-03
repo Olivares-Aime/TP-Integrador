@@ -42,10 +42,10 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 150px;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
 
     background-image: url("imagenes/fondo.png");
     background-size: 100% 100%;
