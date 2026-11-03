@@ -10,7 +10,7 @@ El desarrollo se realizó utilizando HTML5, CSS3 y JavaScript, aplicando los con
 
 ## 2. Integrantes
 
-- **Aime Olivares**
+- **Aime Ayelen Olivares**
 - **Melisa Anita Rodríguez**
 
 ## 3. Objetivos del proyecto
